@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Rock paper and scissors</title>
+  </head>
+  <body>
+    <section class="game" id="target" >
+      <div class="score">
+        <div class="player1-score">
+          <h2 id="message">*Your name</h2>
+          <p>0</p>
+        </div>
+        <div class="player2-score">
+          <h2>Player 2</h2>
+          <p>0</p>
+        </div> 
+      </div>
+
+      <div class="intro">
+        <h1>Rock Paper & Scissors</h1>
+        <div class="center">
+          <img class="img" src="/assets/rock.png" style="transform: rotate(-180deg ); transform: scaleX(-1);" width="180px">
+          <img class="img" src="/assets/paper.png" width="180px">
+          <img class="img" src="/assets/scissors.png" width="180px">
+        </div>
+
+        <div class="center" >
+          <h3 class="h3">Enter your name:</h3>
+          <input id="userInput" class="input" > &nbsp;&nbsp; <br><br>
+          <button onclick="yourName()" style="margin-left: 12.5px;"> Submit </button>
+         
+
+        </div>
+  
+       
+      </div>
+
+      <div class="match fadeOut">
+        <h2 class="winner">Choose an option</h2>
+        <div class="hands">
+          <img class="player1-hand" src="./assets/rock.png" alt="" />
+          <img class="player2-hand" src="./assets/rock.png" alt="" />
+        </div>
+        <div class="options">
+          <button class="rock" id="buttonBlock" onclick="reset(); buttonBlock()">rock</button>
+          <button class="paper" id="buttonBlock" onclick="reset(); buttonBlock()">paper</button>
+          <button class="scissors" id="buttonBlock" onclick="reset(); buttonBlock()">scissors</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
